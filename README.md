@@ -1,4 +1,4 @@
-# Hidewood's Notes
+# hidewood's blog
 
 Hugo + PaperMod 个人技术博客，目标地址：https://hidewood.github.io/ 。
 

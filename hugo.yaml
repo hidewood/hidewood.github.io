@@ -1,7 +1,7 @@
 baseURL: "https://hidewood.github.io/"
 locale: en-US
 defaultContentLanguage: en
-title: "Hidewood's Notes"
+title: "hidewood's blog"
 theme: PaperMod
 hasCJKLanguage: true
 enableRobotsTXT: true
@@ -21,7 +21,7 @@ params:
   ShowToc: true
   TocOpen: false
   homeInfoParams:
-    Title: "👋 Welcome to Hidewood's Notes"
+    Title: "👋 Welcome to hidewood's blog"
     Content: "Hi，It's hidewood, nice to meet you!"
   socialIcons:
     - name: github
@@ -36,7 +36,7 @@ params:
 menu:
   main:
     - name: Posts
-      url: /posts/
+      url: /
       weight: 10
     - name: Archive
       url: /archives/

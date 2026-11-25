@@ -14,6 +14,14 @@ params:
   author: hidewood
   description: "Notes on technology, projects, and things I learn."
   defaultTheme: auto
+  label:
+    icon: /icons/cat-64.png
+    iconHeight: 36
+  assets:
+    favicon: /icons/cat-256.png
+    favicon16x16: /icons/cat-16.png
+    favicon32x32: /icons/cat-32.png
+    apple_touch_icon: /icons/cat-180.png
   ShowReadingTime: true
   ShowCodeCopyButtons: true
   ShowPostNavLinks: true

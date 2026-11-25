@@ -44,6 +44,7 @@ git push
 - 个人介绍：`content/about.md`
 - 文章：`content/posts/`
 - 额外样式：`assets/css/extended/custom.css`
+- 网站图标原图：`assets/images/site-icon.jpg`；构建时自动生成标签页、页眉和手机收藏用的 PNG 图标。
 
 起始文章用于检查排版，正式发布前可替换。数学公式尚未配置。
 PaperMod 是子模块，重新克隆时使用 `git clone --recurse-submodules`。

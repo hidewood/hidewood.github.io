@@ -1,0 +1,7 @@
+{{- /* Publish small icon variants from the user's original image. */ -}}
+{{- $source := resources.Get "images/site-icon.jpg" -}}
+{{- range slice 16 32 64 180 256 -}}
+  {{- $icon := $source.Fill (printf "%dx%d Center png" . .) -}}
+  {{- $published := resources.Copy (printf "icons/cat-%d.png" .) $icon -}}
+  {{- $url := $published.RelPermalink -}}
+{{- end -}}

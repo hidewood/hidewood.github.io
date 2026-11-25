@@ -1,0 +1,11 @@
+:root {
+  --main-width: 780px;
+  --nav-width: 1040px;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Microsoft YaHei", sans-serif;
+}
+.post-content { line-height: 1.85; }
+.post-content pre code { line-height: 1.65; }
+.home-info .entry-content { line-height: 1.85; }

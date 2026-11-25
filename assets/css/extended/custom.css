@@ -8,10 +8,18 @@ body {
     "Microsoft YaHei", sans-serif;
   font-size: 16px;
 }
-.logo-switches {
-  border-inline-end: 1px solid var(--primary);
-  padding-inline-end: 12px;
-  line-height: 18px;
+body:has(.home-info) .logo > a > img {
+  display: none;
+}
+body:has(.home-info) .logo {
+  column-gap: 0.25rem;
+}
+.logo-switches::after {
+  content: "";
+  align-self: center;
+  inline-size: 1px;
+  block-size: 0.9em;
+  background: currentColor;
 }
 
 /* The reference uses a content-height welcome block on desktop. */

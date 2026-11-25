@@ -29,7 +29,7 @@ params:
   ShowToc: true
   TocOpen: false
   homeInfoParams:
-    Title: "👋 Welcome to hidewood's blog"
+    Title: "👋 Welcome to Hidewood's blog"
     Content: "Hi，It's hidewood, nice to meet you!"
   socialIcons:
     - name: github

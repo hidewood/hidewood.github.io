@@ -14,6 +14,19 @@ body:has(.home-info) .logo > a > img {
 body:has(.home-info) .logo {
   column-gap: 0.25rem;
 }
+@media (min-width: 64rem) {
+  body:has(.home-info) .header-nav {
+    /* End the brand one rem before the cards and the menu at the usual nav edge. */
+    display: grid;
+    max-width: none;
+    grid-template-columns:
+      minmax(max-content, calc((100% - var(--main-width)) / 2 - 1rem))
+      1fr
+      max(0px, calc((100% - var(--nav-width)) / 2));
+    column-gap: 0;
+    justify-items: end;
+  }
+}
 .logo-switches::after {
   content: "";
   align-self: center;

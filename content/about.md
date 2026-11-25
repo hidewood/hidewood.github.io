@@ -1,12 +1,12 @@
 ---
-title: "关于"
+title: "About"
 draft: false
 hidemeta: true
 ShowToc: false
 ---
 
-你好，我是 hidewood。
+Hi, I'm hidewood.
 
-这个博客记录我的技术探索、项目实践与学习笔记。
+This is where I share notes on technology, projects, and things I learn. Posts may be written in Chinese or English.
 
-你可以在 [GitHub](https://github.com/hidewood) 找到我。
+You can find me on [GitHub](https://github.com/hidewood).

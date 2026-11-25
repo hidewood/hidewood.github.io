@@ -1,7 +1,7 @@
 baseURL: "https://hidewood.github.io/"
-locale: zh-CN
-defaultContentLanguage: zh
-title: "技术札记"
+locale: en-US
+defaultContentLanguage: en
+title: "Hidewood's Notes"
 theme: PaperMod
 hasCJKLanguage: true
 enableRobotsTXT: true
@@ -12,7 +12,7 @@ outputs:
 params:
   env: production
   author: hidewood
-  description: "记录技术探索、项目实践与学习笔记。"
+  description: "Notes on technology, projects, and things I learn."
   defaultTheme: auto
   ShowReadingTime: true
   ShowCodeCopyButtons: true
@@ -21,8 +21,8 @@ params:
   ShowToc: true
   TocOpen: false
   homeInfoParams:
-    Title: "你好，欢迎来到技术札记"
-    Content: "把学到的知识写清楚，把做过的事情记下来。这里记录技术探索、项目实践与学习笔记。"
+    Title: "👋 Welcome to Hidewood's Notes"
+    Content: "Hi，It's hidewood, nice to meet you!"
   socialIcons:
     - name: github
       url: "https://github.com/hidewood"
@@ -35,19 +35,19 @@ params:
     keys: [title, permalink, summary, content]
 menu:
   main:
-    - name: 文章
+    - name: Posts
       url: /posts/
       weight: 10
-    - name: 归档
+    - name: Archive
       url: /archives/
       weight: 20
-    - name: 搜索
+    - name: Search
       url: /search/
       weight: 30
-    - name: 标签
+    - name: Tags
       url: /tags/
       weight: 40
-    - name: 关于
+    - name: About
       url: /about/
       weight: 50
 caches:

@@ -1,7 +1,7 @@
 ---
-title: "搜索"
+title: "Search"
 layout: search
 url: /search/
-placeholder: "搜索文章标题或正文"
-summary: "搜索技术笔记。"
+placeholder: "Search posts by title or content"
+summary: "Search notes and articles."
 ---

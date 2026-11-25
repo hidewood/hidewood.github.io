@@ -1,6 +1,8 @@
-# 技术札记
+# Hidewood's Notes
 
 Hugo + PaperMod 个人技术博客，目标地址：https://hidewood.github.io/ 。
+
+网站界面、首页介绍和 About 页面使用英文。文章可以用中文或英文编写，保留 CJK 字数统计支持；无需为中文文章另外设置中文站点语言。
 
 ## 本地预览
 

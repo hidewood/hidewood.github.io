@@ -1,6 +1,6 @@
 ---
-title: "归档"
+title: "Archive"
 layout: archives
 url: /archives/
-summary: "按时间浏览文章。"
+summary: "Browse posts by date."
 ---

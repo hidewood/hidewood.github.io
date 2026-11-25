@@ -30,11 +30,13 @@ params:
   TocOpen: false
   homeInfoParams:
     Title: "👋 Welcome to Hidewood's blog"
-    Content: "Hi，It's hidewood, nice to meet you!"
+    Content: "Hi, I'm Hidewood. I write about what I'm building and learning."
   socialIcons:
     - name: github
+      title: GitHub
       url: "https://github.com/hidewood"
     - name: rss
+      title: RSS
       url: /index.xml
   fuseOpts:
     isCaseSensitive: false

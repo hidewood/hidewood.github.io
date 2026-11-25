@@ -6,8 +6,13 @@
     <div class="entry-content md-content">
         <p>{{ .Content }}</p>
     </div>
-    <footer class="entry-footer">
-        {{ partial "social_icons.html" (dict "align" .AlignSocialIconsTo) }}
+    <footer class="entry-footer home-links">
+        {{- range site.Params.socialIcons }}
+        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">{{ partial "svg.html" . }}</span>
+            {{ .title | default (.name | title) }}
+        </a>
+        {{- end }}
     </footer>
 </article>
 {{- end }}

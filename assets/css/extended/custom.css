@@ -34,6 +34,27 @@ body:has(.home-info) .logo {
 .home-info .entry-content p {
   margin: 0;
 }
+.home-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+.home-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.5rem;
+  font-size: 0.875rem;
+}
+.home-links svg {
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.home-links a:is(:hover, :focus-visible) {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
 .post-entry:hover,
 .post-entry:focus-within {
   transform: none;

@@ -12,11 +12,8 @@ concurrency:
   group: blog-pages
   cancel-in-progress: false
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.publish.outputs.page_url }}
     steps:
       - name: Get source and theme
         uses: actions/checkout@v7
@@ -48,6 +45,13 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: public
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publish.outputs.page_url }}
+    steps:
       - name: Wait for site artifact to become available
         shell: bash
         env:

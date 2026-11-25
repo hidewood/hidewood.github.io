@@ -44,7 +44,17 @@ gh repo create $taskFullName --public --source . --remote origin
 Assert-LastCommand 'Could not create the public repository.'
 git push -u origin main
 Assert-LastCommand 'Could not push source files.'
-gh api --method POST "repos/$taskFullName/pages" -f build_type=workflow --silent
+try {
+    gh api "repos/$taskFullName/pages" --silent 2>$null
+    $taskPagesExist = ($LASTEXITCODE -eq 0)
+} catch {
+    $taskPagesExist = $false
+}
+if ($taskPagesExist) {
+    gh api --method PUT "repos/$taskFullName/pages" -f build_type=workflow --silent
+} else {
+    gh api --method POST "repos/$taskFullName/pages" -f build_type=workflow --silent
+}
 Assert-LastCommand 'Source was pushed, but Pages setup failed. Inspect Settings > Pages before continuing.'
 gh workflow run hugo.yaml --ref main
 Assert-LastCommand 'Pages is configured. Check Actions and start Publish blog if needed.'
